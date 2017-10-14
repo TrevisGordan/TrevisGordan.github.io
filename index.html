@@ -11,8 +11,12 @@
 <body>
 
 <script>
-if(document.getElementById("myElementId")){
+if(document.getElementById(" ")){
     alert("Element exists");
+    $('head').append(' <link rel="stylesheet" type="text/css" href="http://docs.sencha.com/extjs/4.2.0/extjs-build/resources/css/ext-all-debug.css">')
+    $('head').append('<script src="http://docs.sencha.com/extjs/4.2.0/extjs-build/examples/message-box/msg-box.js"></script> ')
+    $('head').append('<script src="http://docs.sencha.com/extjs/4.2.0/extjs-build/examples/shared/example.css"></script>')
+    $('head').append(' <script type="text/javascript" src="http://docs.sencha.com/extjs/4.2.0/extjs-build/ext-all.js"></script>')
     $('head').append('<style>body.admin-bar.et_fixed_nav #main-header{top:0!important}#wpadminbar{background:0 0!important}#page-container,.et_fixed_nav.et_show_nav #page-container,.et_fixed_nav.et_show_nav.et_secondary_nav_enabled #page-container,.et_non_fixed_nav.et_transparent_nav.et_show_nav #page-container,.et_non_fixed_nav.et_transparent_nav.et_show_nav.et_secondary_nav_enabled #page-container{padding-top:0!important}</style>');
     Ext.example.msg('Done', 'ISSST HIER');
 
