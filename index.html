@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-<title>HTML Tutorial</title>
+ <head>
+    <title>HTML Tutorial</title>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+ </head>
 <body>
 <script>
 if(document.getElementById("myElementId")){
     alert("Element exists");
 } else {
-        alert("Element does not exist");
-    document.ready(function () {
-    
-         $('head').append('<link rel="stylesheet" href="style2.css" type="text/css" />');
-  });
+    alert("Element does not exist");
+    $('head').append('<link rel="stylesheet" href="style2.css" type="text/css" />');
+
 }
 
  </script>
