@@ -7,11 +7,10 @@
 if(document.getElementById("myElementId")){
     alert("Element exists");
 } else {
+    
+    $('head').append('<style>body { background-color:#000; }</style>');
     alert("Element does not exist");
-    $('head').append('<style>body { background-color:#000 }</style>');
 }
-
-
 
  </script>
 <svg 
