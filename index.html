@@ -3,14 +3,14 @@
 <title>HTML Tutorial</title>
 <body>
 <script>
- jQuery(document).ready(function($){
-var element =  document.getElementById('Test');
-if (typeof(element) != 'undefined' && element != null)
-{
-  alert("Water!")
+
+if(document.getElementById("myElementId")){
+    alert("Element exists");
+} else {
+    alert("Element does not exist");
+    $('head').append('<style>body { background-color:#000 }</style>');
 }
 
-});
 
 
  </script>
