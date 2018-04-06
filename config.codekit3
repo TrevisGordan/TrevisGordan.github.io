@@ -1240,12 +1240,22 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/js\/jquery-2.1.4.min.js": {
+	"\/assets\/js\/jquery-2.1.4.min-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/assets\/js\/jquery-2.1.4.min-min.js",
+		"oAP": "\/assets\/js\/jquery-2.1.4.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/jquery-3.3.1.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/jquery-3.3.1.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

@@ -225,11 +225,11 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 a {
-  color: #0074D9;
+  color: #AFD11E;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
-    color: #40a6ff; }
+    color: #d2ea6b; }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
@@ -297,7 +297,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #AFD11E;
   cursor: pointer;
   box-sizing: border-box; }
   .button:hover, .button:active, .button:focus,
@@ -340,11 +340,12 @@ input[type="button"] {
   position: absolute;
   top: 10px;
   right: -10px;
-  background: #0074D9;
+  background: #AFD11E;
   color: white;
   padding: 2px 6px;
   transition: all 0.3s ease-in-out;
-  transform-origin: top right; }
+  transform-origin: top right;
+  border-radius: 5px; }
   .fork-tag:hover {
     color: white;
     animation: wiggle 0.4s linear 1; }
@@ -391,7 +392,8 @@ body {
     padding: 40px;
     position: relative;
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
     .page-home section:first-child {
       background-image: url(../img/tools.png);
       background-position: center; }
