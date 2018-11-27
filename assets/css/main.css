@@ -301,7 +301,7 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box; } */
 
-  .button:hover, .button:active, .button:focus,
+  /* .button:hover, .button:active, .button:focus,
   button:hover,
   button:active,
   button:focus,
@@ -316,7 +316,7 @@ input[type="button"] {
   input[type="button"]:focus {
     color: #333;
     border-color: #888;
-    outline: 0; }
+    outline: 0; } */
 
 .name-lockup {
   display: -webkit-inline-box;
@@ -448,7 +448,7 @@ body {
       color: #fff;
       }
 
-      #banner-message {
+      .banner {
       background: #fff;
       border-radius: 4px;
       padding: 20px;
@@ -460,21 +460,21 @@ body {
       margin-bottom: 15px;
       }
 
-      #banner-message.alt {
+      .banner.alt {
       background: #0084ff;
       color: #fff;
       margin: 10px auto;
       width: 320px;
       }
 
-      #banner-message.alt button {
+      .banner.alt button {
       background: #fff;
       color: #000;
       }
 
       /**  **/
 
-      #xbanner-message {
+      /* #xbanner-message {
       background: #fff;
       border-radius: 4px;
       padding: 20px;
@@ -497,7 +497,7 @@ body {
       #xbanner-message.alt button {
       background: #fff;
       color: #000;
-      }
+      } */
 
 
       .odometer {
