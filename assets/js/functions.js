@@ -53,7 +53,7 @@ $.getJSON( fanUrl2, function( json ) {
   console.log( "JSON Data: " + json.data.aqi );
   var air = json.data.aqi
   text.text(air)
-  odometer.innerHTML = air
+  odometer_liangxiang.innerHTML = air
   return json
  });
 
