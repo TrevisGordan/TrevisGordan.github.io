@@ -1,81 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head
+
+  <link rel="stylesheet" href="assets/css/main.css" />
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
   <title>Gordan Trevis Kit</title>
-  
-  <style> body {
-  background: #20262E;
-  padding: 20px;
-  font-family: Helvetica;
-}
 
-#banner-message {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  font-size: 25px;
-  text-align: center;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 300px;
-  margin-bottom: 15px;
-}
-
-button {
-  background: #0084ff;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 14px;
-  font-size: 15px;
-  color: #fff;
-}
-
-#banner-message.alt {
-  background: #0084ff;
-  color: #fff;
-  margin: 10px auto;
-  width: 320px;
-}
-
-#banner-message.alt button {
-  background: #fff;
-  color: #000;
-}
-
-/**  **/
-
-#xbanner-message {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  font-size: 25px;
-  text-align: center;
-  transition: all 0.2s;
-  margin: 0 auto;
-  width: 300px;
-  margin-bottom: 15px;
-}
-
-
-#xbanner-message.alt {
-  background: #0084ff;
-  color: #fff;
-  margin: 10px auto;
-  width: 320px;
-}
-
-#xbanner-message.alt button {
-  background: #fff;
-  color: #000;
-}
-
-
-.odometer {
-    font-size: 100px;
-} 
+  <style>
   </style>
-  
+
   <script>
   // find elements
 var banner = $("#banner-message")
@@ -102,16 +36,16 @@ var xtext2 = $("#xtext2")
 $.getJSON( url, function( json ) {
   console.log( "JSON Data: " + json.number );
  });
- 
+
  //----------------
- 
+
 // handle click and add class
 button.on("click", function(){
   banner.toggleClass("alt")
   buttontext.text("pressed")
 })
 
-// JSON 
+// JSON
 
 var url ="https://tggfworktime.firebaseio.com/Schedule/2018-04-06.json"
 
@@ -142,7 +76,7 @@ $.getJSON( fanUrl2, function( json ) {
   //xtext.text(pageName)
   //xtext2.text(pageFans)
   //return json
- 
+
 // });
 
 	$("#btnAjaxCall").click(function(){
@@ -154,32 +88,33 @@ $.getJSON( fanUrl2, function( json ) {
 			url:fanUrl2,
 			method:"GET"
 		}).done(function(data){
-    
+
     	var ajaxName = data.name
       var ajaxFans = data.data.aqi
-    	
+
       text2.text(ajaxFans)
-    
+
     })}
-    
+
   </script>
-  
+
 <!-- Extra styles for this example -->
-  
+
   <!-- Odometr includes -->
 <link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
 <script src="https://github.hubspot.com/odometer/odometer.js"></script>
 
 <!-- Extra styles for this example -->
 </head>
-  
+
 <body>
 
 
 
 
-
+<div id="xbanner-message">
 <div id="odometer" class="odometer">999</div>
+</div>
 
 
 <div id="banner-message">
