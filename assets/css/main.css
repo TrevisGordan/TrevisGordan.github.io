@@ -437,6 +437,17 @@ body {
       font-family: Helvetica;
       }
 
+
+
+      button {
+      background: #0084ff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 14px;
+      font-size: 15px;
+      color: #fff;
+      }
+
       #banner-message {
       background: #fff;
       border-radius: 4px;
@@ -447,15 +458,6 @@ body {
       margin: 0 auto;
       width: 300px;
       margin-bottom: 15px;
-      }
-
-      button {
-      background: #0084ff;
-      border: none;
-      border-radius: 5px;
-      padding: 8px 14px;
-      font-size: 15px;
-      color: #fff;
       }
 
       #banner-message.alt {
