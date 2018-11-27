@@ -3,19 +3,79 @@
 <head>
   <script src="jquery-3.3.1.min.js"></script>
   <title>Gordan Trevis Kit</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!-- Odometr includes -->
-  <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
-  <script src="http://github.hubspot.com/odometer/odometer.js"></script>
-<!-- Odometr includes -->
-<link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
-<script src="https://github.hubspot.com/odometer/odometer.js"></script>
-<style> .odometer {
+  
+  <style> body {
+  background: #20262E;
+  padding: 20px;
+  font-family: Helvetica;
+}
+
+#banner-message {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #0084ff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-size: 15px;
+  color: #fff;
+}
+
+#banner-message.alt {
+  background: #0084ff;
+  color: #fff;
+  margin: 10px auto;
+  width: 320px;
+}
+
+#banner-message.alt button {
+  background: #fff;
+  color: #000;
+}
+
+/**  **/
+
+#xbanner-message {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  transition: all 0.2s;
+  margin: 0 auto;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+
+#xbanner-message.alt {
+  background: #0084ff;
+  color: #fff;
+  margin: 10px auto;
+  width: 320px;
+}
+
+#xbanner-message.alt button {
+  background: #fff;
+  color: #000;
+}
+
+
+.odometer {
     font-size: 100px;
-  }</style>
+} 
+  </style>
+  
   <script>
   var fanUrl2 = "https://api.waqi.info/feed/beijing/fangshanliangxiang/?token=b817986004304da829b72557c283300c20dfb9ae"
 
@@ -26,103 +86,38 @@
   odometer.innerHTML = air
   return json
  });
-
-  
-  
   </script>
   
 <!-- Extra styles for this example -->
+  
+  <!-- Odometr includes -->
+<link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-car.css" />
+<script src="https://github.hubspot.com/odometer/odometer.js"></script>
 
-
+<!-- Extra styles for this example -->
 </head>
+  
 <body>
 
-<div class="page-home">
 
-  <section>
-    <h1 class="page-title">DevPage<br>GordanTrevis</h1>
-    <p>Ground zero for your next project.</p>
 
-    <a href="https://github.com/DevTips/DevTips-Starter-Kit/archive/master.zip" class="button button-download">Donate Now</a>
 
-    <a class="fork-tag" href="https://github.com/TrevisGordan">Visit Me on GitHub</a>
 
-  </section>
+<div id="odometer" class="odometer">999</div>
 
-  <section>
-    
-   <article>
-     <!-------- ------------>
-     <!-------- ------------>
-     <!-------- ------------>
-     
-      <h4>Air Quality</h4>
-      <div class="flex-video-wrap">
-        <div class="flex-video">
-          <div id="odometer" class="odometer">999</div>
-        </div>
-      </div>
-     
-     <!-------- ------------>
-     <!-------- ------------>
-     <!-------- ------------>
-    </article>
-    
-    <article>
-      <h4>Watch the Video</h4>
-      <div class="flex-video-wrap">
-        <div class="flex-video">
-          <iframe src="https://www.youtube.com/embed/F3u7whqIxrc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </article>
 
-    <article>
-      <p>Brought to you by</p>
-      <div class="name-lockup">
-        <img class="avatar" src="https://avatars1.githubusercontent.com/u/29541742">
-        <div class="name">
-          <strong>Gordan Trevis</strong>
-          <br>
-          <a href="https://github.com/TrevisGordan">@TrevisGordan</a>
-        </div>
-      </div>
-  </article>
-
-  </section>
-
-  <pre>
-    DevTips-Starter-Kit
-    | -- assets/
-    |   | -- css/
-    |   |   | -- 1-tools/
-    |   |   |   | -- bourbon/
-    |   |   |   | -- fonts.sass
-    |   |   |   | -- normalize.sass
-    |   |   |   | -- vars.sass
-    |   |   | -- 2-basics/
-    |   |   |   | -- body-elements.sass
-    |   |   |   | -- links.sass
-    |   |   |   | -- selection-colors.sass
-    |   |   |   | -- typography.sass
-    |   |   | -- 3-modules/
-    |   |   |   | -- example-module.sass
-    |   |   |   | -- example-module.sass
-    |   |   | -- 4-pages/
-    |   |   |   | -- example-page.sass
-    |   |   | -- main.sass
-    |   | -- js/
-    |   |   | -- jquery.js
-    |   |   | -- functions.js
-    |   | -- img/
-    | -- favicon.ico
-    | -- readme.md
-    | -- index.html
-  </pre>
-
+<div id="banner-message">
+  <p id="text" >Hello World</p>
+  <p id="text2" >Hello World</p>
+  <button id="Buttontext">Change color</button>
+  <button id="btnAjaxCall">Call</button>
 </div>
 
-<script src="assets/js/jquery-2.1.4.min.js"></script>
-<script src="assets/js/functions.js" type="text/javascript"></script>
+<div id="xbanner-message">
+  <p id="xtext" >Hello World</p>
+  <p id="xtext2" >Hello World</p>
+  <button id="xButtontext">Change color</button>
+</div>
+
 </body>
 </html>
