@@ -40,7 +40,8 @@ var url ="https://tggfworktime.firebaseio.com/Schedule/2018-04-06.json"
 
 var fanUrl="https://graph.facebook.com/v2.12/CSWBayreuth/?fields=fan_count%2Cname&access_token=EAACEdEose0cBAHJKansUSDompNUrre4ye70ycZAHw88M8gmQvAidLZBLBhPt7qaopg0b8wUblGvgOg2BBMIFMKoKEUAc75lZBnLdEMLl509ZCGvmkEYBxUhb9Grww7RhWZBUVhgQ50YZC5D6GAX8OH2tLUBQFvGZBEZBHkaFKtYhuYLJoc5tPvu94AZAQTSE1DvEZD"
 
-var fanUrl2 = "https://api.waqi.info/feed/beijing/fangshanliangxiang/?token=b817986004304da829b72557c283300c20dfb9ae"
+var liangxiangUrl = "https://api.waqi.info/feed/beijing/fangshanliangxiang/?token=b817986004304da829b72557c283300c20dfb9ae"
+var haidianUrl = "https://api.waqi.info/feed/beijing/haidianwanliu/?token=b817986004304da829b72557c283300c20dfb9ae"
 
 //$.getJSON( url, function( json ) {
 //  console.log( "JSON Data: " + json.Dienst );
@@ -49,13 +50,22 @@ var fanUrl2 = "https://api.waqi.info/feed/beijing/fangshanliangxiang/?token=b817
 //  return json
 // });
 
-$.getJSON( fanUrl2, function( json ) {
-  console.log( "JSON Data: " + json.data.aqi );
-  var air = json.data.aqi
-  text.text(air)
-  odometer.innerHTML = air
+$.getJSON( haidianUrl, function( json ) {
+  console.log( "JSON Haidian Data: " + json.data.aqi );
+  var haidianair = json.data.aqi
+  var x = document.getElementById("odometer_haidian");
+  text.text(haidianair)
+  x.innerHTML = haidianair
   return json
  });
+ 
+ $.getJSON( liangxiangUrl, function( json ) {
+   console.log( "JSON Liangxiang Data: " + json.data.aqi );
+   var liangxiangair = json.data.aqi
+   text.text(liangxiangair)
+   odometer.innerHTML = liangxiangair
+   return json
+  });
 
 
 //$.getJSON( fanUrl5, function( json ) {
