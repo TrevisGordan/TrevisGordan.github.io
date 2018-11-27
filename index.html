@@ -15,6 +15,21 @@
 <style> .odometer {
     font-size: 100px;
   }</style>
+  <script>
+  var fanUrl2 = "https://api.waqi.info/feed/beijing/fangshanliangxiang/?token=b817986004304da829b72557c283300c20dfb9ae"
+
+  $.getJSON( fanUrl2, function( json ) {
+  console.log( "JSON Data: " + json.data.aqi );
+  var air = json.data.aqi
+  text.text(air)
+  odometer.innerHTML = air
+  return json
+ });
+
+  
+  
+  </script>
+  
 <!-- Extra styles for this example -->
 
 
