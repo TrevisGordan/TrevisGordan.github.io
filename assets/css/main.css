@@ -361,7 +361,7 @@ input[type="button"] {
       text-align: center;
       transition: all 0.2s;
       margin: 0 auto;
-      width: 300px;
+      width: 450px;
       margin-bottom: 15px;
       }
 
@@ -406,6 +406,11 @@ input[type="button"] {
           .odometer {
             font-size: 200px!important;
           }
+
+          #banner_head {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            }
 
 
           }

@@ -42,7 +42,7 @@ var fanUrl="https://graph.facebook.com/v2.12/CSWBayreuth/?fields=fan_count%2Cnam
 
 var liangxiangUrl = "https://api.waqi.info/feed/beijing/fangshanliangxiang/?token=b817986004304da829b72557c283300c20dfb9ae"
 var haidianUrl = "https://api.waqi.info/feed/beijing/haidianwanliu/?token=b817986004304da829b72557c283300c20dfb9ae"
-
+var exchangeUrl ="https://api.exchangeratesapi.io/latest"
 //$.getJSON( url, function( json ) {
 //  console.log( "JSON Data: " + json.Dienst );
 //  var dienst = json.Dienst
@@ -58,7 +58,7 @@ $.getJSON( haidianUrl, function( json ) {
   x.innerHTML = haidianair
   return json
  });
- 
+
  $.getJSON( liangxiangUrl, function( json ) {
    console.log( "JSON Liangxiang Data: " + json.data.aqi );
    var liangxiangair = json.data.aqi
@@ -66,6 +66,15 @@ $.getJSON( haidianUrl, function( json ) {
    odometer.innerHTML = liangxiangair
    return json
   });
+
+  $.getJSON( exchangeUrl, function( json ) {
+    console.log( "JSON Exchange Data: " + json.rates.CNY );
+    var exchangerate = json.rates.CNY
+    var y = document.getElementById("odometer_exchange");
+    text.text(exchangerate)
+    y.innerHTML = String(exchangerate)
+    return json
+   });
 
 
 //$.getJSON( fanUrl5, function( json ) {
