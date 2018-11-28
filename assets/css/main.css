@@ -385,6 +385,12 @@ input[type="button"] {
       /** MEDIA STYLES  **/
       /** MEDIA STYLES  **/
 
+      h2{
+        font-size:25px;
+        font-weight: unset;
+
+      }
+
           /* Responsive Styles Tablet And Below */
           @media (max-width: 980px) {
 
