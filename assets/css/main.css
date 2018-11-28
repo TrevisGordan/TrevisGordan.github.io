@@ -381,17 +381,25 @@ input[type="button"] {
         font-size: 100px;
       }
 
-      /* Responsive Styles Tablet And Below */
-      @media (max-width: 980px) {
+      /** MEDIA STYLES  **/
+      /** MEDIA STYLES  **/
+      /** MEDIA STYLES  **/
 
-      .banner{
-        width: 80%;
-        font-size: 70px;
-      }
+          /* Responsive Styles Tablet And Below */
+          @media (max-width: 980px) {
 
-      .odometer {
-        font-size: 200px!important;
-      }
+          h2{
+            font-size:70px;
+          }
+
+          .banner{
+            width: 80%;
+
+          }
+
+          .odometer {
+            font-size: 200px!important;
+          }
 
 
-      }
+          }
