@@ -381,15 +381,17 @@ input[type="button"] {
         font-size: 100px;
       }
 
-      /** MEDIA STYLES  **/
-      /** MEDIA STYLES  **/
-      /** MEDIA STYLES  **/
-
       h2{
         font-size:25px;
         font-weight: unset;
 
       }
+      
+      /** MEDIA STYLES  **/
+      /** MEDIA STYLES  **/
+      /** MEDIA STYLES  **/
+
+
 
           /* Responsive Styles Tablet And Below */
           @media (max-width: 980px) {
@@ -397,6 +399,11 @@ input[type="button"] {
           h2{
             font-size:70px;
           }
+
+          #banner_exchange h2{
+            line-height:5px
+            }
+
 
           .banner{
             width: 80%;
