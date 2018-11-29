@@ -59,11 +59,11 @@ $.getJSON( haidianUrl, function( json ) {
 
   if (haidianair < 70) {
    console.log( "Air quality: " + haidianair + " is green" );
-   x[0].style.background = "green";
+   x.style.background = "green";
 }
   if (70 < haidianair&&haidianair < 120) {
    console.log( "Air quality: " + haidianair + " is yellow" );
-   x[0].style.background = "yellow";
+   x.style.background = "yellow";
 }
   if (120 < haidianair&&haidianair < 175) {
    console.log( "Air quality: " + haidianair + " is orange" );
@@ -72,17 +72,17 @@ $.getJSON( haidianUrl, function( json ) {
 
    if (175 < haidianair&&haidianair < 225) {
    console.log( "Air quality: " + haidianair + " is red" );
-   x[0].style.background = "red";
+   x.style.background = "red";
 }
 
    if (225 < haidianair&&haidianair < 300) {
    console.log( "Air quality: " + haidianair + " is Dark red" );
-   x[0].style.background = "#730010";
+   x.style.background = "#730010";
 }
 
   if (haidianair > 300) {
    console.log( "Air quality: " + haidianair + " is green" );
-   x[0].style.background = "green";
+   x.style.background = "green";
 }
 
   return json
@@ -98,30 +98,30 @@ $.getJSON( haidianUrl, function( json ) {
 
    if (liangxiangair < 70) {
     console.log( "Air quality: " + liangxiangair + " is green" );
-    x[0].style.background = "green";
+    x.style.background = "green";
    }
    if (70 < liangxiangair&&liangxiangair < 120) {
     console.log( "Air quality: " + liangxiangair + " is yellow" );
-    x[0].style.background = "yellow";
+    x.style.background = "yellow";
    }
    if (120 < liangxiangair&&liangxiangair < 175) {
     console.log( "Air quality: " + liangxiangair + " is orange" );
-    x[0].style.background = "orange";
+    x.style.background = "orange";
    }
 
     if (175 < liangxiangair&&liangxiangair < 225) {
     console.log( "Air quality: " + liangxiangair + " is red" );
-    x[0].style.background = "red";
+    x.style.background = "red";
    }
 
     if (225 < liangxiangair&&liangxiangair < 300) {
     console.log( "Air quality: " + liangxiangair + " is Dark red" );
-    x[0].style.background = "#730010";
+    x.style.background = "#730010";
    }
 
    if (liangxiangair > 300) {
     console.log( "Air quality: " + liangxiangair + " is green" );
-    x[0].style.background = "green";
+    x.style.background = "green";
    }
 
    return json
