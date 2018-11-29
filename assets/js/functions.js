@@ -67,7 +67,7 @@ $.getJSON( haidianUrl, function( json ) {
 }
   if (120 < haidianair&&haidianair < 175) {
    console.log( "Air quality: " + haidianair + " is orange" );
-   x[0].style.background = "orange";
+   x.style.background = "orange";
 }
 
    if (175 < haidianair&&haidianair < 225) {
