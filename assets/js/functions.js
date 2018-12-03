@@ -120,8 +120,8 @@ $.getJSON( haidianUrl, function( json ) {
    }
 
    if (liangxiangair > 300) {
-    console.log( "Air quality: " + liangxiangair + " is green" );
-    x.style.background = "green";
+    console.log( "Air quality: " + liangxiangair + " is purple" );
+    x.style.background = "purple";
    }
 
    return json
