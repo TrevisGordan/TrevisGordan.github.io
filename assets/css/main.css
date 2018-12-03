@@ -402,6 +402,12 @@ input[type="button"] {
             line-height: 25px;
           }
 
+          p {
+            font-size: 40px;
+            line-height:5px;
+
+          }
+          
           #banner_exchange h2{
             line-height:5px
             }
