@@ -383,10 +383,11 @@ input[type="button"] {
 
       h2{
         font-size:25px;
+
         font-weight: unset;
 
       }
-      
+
       /** MEDIA STYLES  **/
       /** MEDIA STYLES  **/
       /** MEDIA STYLES  **/
@@ -398,6 +399,7 @@ input[type="button"] {
 
           h2{
             font-size:70px;
+            line-height: 25px;
           }
 
           #banner_exchange h2{
