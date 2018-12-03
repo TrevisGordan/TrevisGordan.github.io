@@ -52,9 +52,9 @@ var exchangeUrl ="https://api.exchangeratesapi.io/latest"
 
 $.getJSON( haidianUrl, function( json ) {
   console.log( "JSON Haidian Data: " + json.data.aqi );
-  console.log( "JSON Haidian Data Temp: " + json.data.iaqi.t );
+  console.log( "JSON Haidian Data Temp: " + json.data.iaqi.t.v );
   var haidianair = json.data.aqi
-  var haidiantemp = json.data.iaqi.t
+  var haidiantemp = json.data.iaqi.t.v
 
   var x = document.getElementById("odometer_haidian");
   var y = document.getElementById("temp_liangxian")
