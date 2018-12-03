@@ -52,10 +52,15 @@ var exchangeUrl ="https://api.exchangeratesapi.io/latest"
 
 $.getJSON( haidianUrl, function( json ) {
   console.log( "JSON Haidian Data: " + json.data.aqi );
+  console.log( "JSON Haidian Data Temp: " + json.data.iaqi.t );
   var haidianair = json.data.aqi
+  var haidiantemp = json.data.iaqi.t
+
   var x = document.getElementById("odometer_haidian");
+  var y = document.getElementById("temp_liangxian")
   text.text(haidianair)
   x.innerHTML = haidianair
+  y.innerHTML = haidiantemp
 
   if (haidianair < 70) {
    console.log( "Air quality: " + haidianair + " is green" );
