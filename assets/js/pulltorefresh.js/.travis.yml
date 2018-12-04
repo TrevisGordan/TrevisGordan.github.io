@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - 10
+
+sudo: required
+
+cache:
+  directories:
+    - "$HOME/.npm"
+    - "$HOME/.cache"
+
+install:
+  - npm ci
+
+before_script:
+  - npm run pretest
+
+script:
+  - npm run test:ci
+
+notifications:
+  email: false

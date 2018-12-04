@@ -3,7 +3,7 @@
   <head>
 
     <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
 
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/functions.js" type="text/javascript"></script>
-
+    <script src="assets/js/pulltorefresh.js"></script>
     <title>Gordan Trevis Kit</title>
   </head>
 
@@ -62,6 +62,11 @@
         <button id="xButtontext">Change color</button>
       </div>
     </div> -->
+
+    <script>PullToRefresh.init({
+  mainElement: '#main',
+  onRefresh: function() { alert('refresh') }
+});</script>
 
   </body>
 </html>
