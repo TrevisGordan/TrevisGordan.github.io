@@ -57,10 +57,10 @@ $.getJSON( haidianUrl, function( json ) {
   var haidiantemp = json.data.iaqi.t.v
 
   var x = document.getElementById("odometer_haidian");
-  var y = document.getElementById("temp_liangxian")
+  var y = document.getElementById("temp_haidian")
   text.text(haidianair)
   x.innerHTML = haidianair
-  y.innerHTML = haidiantemp
+  y.innerHTML = Math.round(haidiantemp)
 
   if (haidianair < 70) {
    console.log( "Air quality: " + haidianair + " is green" );
@@ -95,11 +95,15 @@ $.getJSON( haidianUrl, function( json ) {
 
  $.getJSON( liangxiangUrl, function( json ) {
    console.log( "JSON Liangxiang Data: " + json.data.aqi );
+   console.log( "JSON Liangxiang Data Temp: " + json.data.iaqi.t.v );
    var liangxiangair = json.data.aqi
+   var liangxiangtemp = json.data.iaqi.t.v
    var x = document.getElementById("odometer");
+   var y = document.getElementById("temp_liangxian")
    text.text(liangxiangair)
 
    odometer.innerHTML = liangxiangair
+   y.innerHTML = Math.round(liangxiangtemp)
 
    if (liangxiangair < 70) {
     console.log( "Air quality: " + liangxiangair + " is green" );
