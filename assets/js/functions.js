@@ -60,7 +60,7 @@ $.getJSON( haidianUrl, function( json ) {
   var y = document.getElementById("temp_liangxian")
   text.text(haidianair)
   x.innerHTML = haidianair
-  y.innerHTML = haidiantemp
+  //y.innerHTML = haidiantemp
 
   if (haidianair < 70) {
    console.log( "Air quality: " + haidianair + " is green" );
